@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 21:33+0000\n"
-"PO-Revision-Date: 2017-06-05 17:34-0400\n"
+"POT-Creation-Date: 2017-06-06 20:11+0000\n"
+"PO-Revision-Date: 2017-06-06 16:13-0400\n"
 "Last-Translator: Manuel Marquez <buzondemam@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,11 +19,13 @@ msgstr ""
 
 #. module: purchase_product_cost_currency
 #: field:product.template,cost_currency_id:0
+#: field:purchase.order.line,product_cost_currency_id:0
 msgid "Currency"
 msgstr "Moneda"
 
 #. module: purchase_product_cost_currency
 #: help:product.template,cost_currency_id:0
+#: help:purchase.order.line,product_cost_currency_id:0
 msgid "Currency used in cost of the product."
 msgstr "Moneda usada en el costo del producto."
 
@@ -31,3 +33,33 @@ msgstr "Moneda usada en el costo del producto."
 #: model:ir.model,name:purchase_product_cost_currency.model_product_template
 msgid "Product Template"
 msgstr "Plantilla de producto"
+
+#. module: purchase_product_cost_currency
+#: model:ir.model,name:purchase_product_cost_currency.model_purchase_order
+msgid "Purchase Order"
+msgstr "Orden de Compra"
+
+#. module: purchase_product_cost_currency
+#: model:ir.model,name:purchase_product_cost_currency.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea pedido de compra"
+
+#. module: purchase_product_cost_currency
+#: code:addons/purchase_product_cost_currency/models/purchase.py:30
+#, python-format
+msgid ""
+"The currency of the cost price of any of products in lines does not match "
+"with the currency of the purchase order"
+msgstr ""
+"La moneda de precio de compra de alguno de los productos de las lineas de la "
+"orden no coincide con la moneda principal de la orden de compra."
+
+#. module: purchase_product_cost_currency
+#: view:purchase.order:purchase_product_cost_currency.purchase_order_form
+msgid "[('purchase_ok', '=', True), ('cost_currency_id', '=', currency_id)]"
+msgstr "[('purchase_ok', '=', True), ('cost_currency_id', '=', currency_id)]"
+
+#. module: purchase_product_cost_currency
+#: view:purchase.order:purchase_product_cost_currency.purchase_order_form
+msgid "{'currency_id': currency_id}"
+msgstr "{'currency_id': currency_id}"
