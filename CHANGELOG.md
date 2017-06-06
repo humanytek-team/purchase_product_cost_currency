@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+
+## [0.3.0] - 2017-06-06
 ### Changed
 - Extension of method that process confirmation of purchase order to validate that the currency of lines of order is the same currency of purchase order.
 
