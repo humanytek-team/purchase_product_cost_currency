@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- Adds domain to field product_id to filter products by currency of order in lines of purchase order.
 
 ## [0.1.0] - 2017-06-05
 ### Added
