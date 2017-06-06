@@ -12,6 +12,14 @@
               <field name="product_cost_currency_id"/>
             </xpath>
 
+            <xpath expr="//field[@name='order_line']" position="attributes">
+              <attribute name="context">{'currency_id': currency_id}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="attributes">
+              <attribute name="domain">[('purchase_ok', '=', True), ('cost_currency_id', '=', currency_id)]</attribute>
+            </xpath>
+
           </field>
         </record>
 
