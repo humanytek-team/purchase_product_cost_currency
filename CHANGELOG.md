@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+
+## [0.2.0] - 2017-06-06
+### Changed
+- Adds domain to field product_id to filter products by currency of order in lines of purchase order.
+
 ## [0.1.0] - 2017-06-05
 ### Added
 - Adds field cost_currency_id to model product.template that allow set the currency for the cost of the product.
